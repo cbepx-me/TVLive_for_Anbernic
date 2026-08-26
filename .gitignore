@@ -1,4 +1,36 @@
-# Byte-compiled / optimized / DLL files
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+
+# Project specific
+tv.log
+volume.txt
+tv.ini
+.cache_*.dat
+tv.srt
+screenshot.png
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Linux
+*~# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
 *$py.class
