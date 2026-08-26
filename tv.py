@@ -17,6 +17,8 @@ import zipfile
 import fcntl
 import configparser
 
+VERSION = "1.0.0"
+
 # ============================
 # 导入第三方库
 # ============================
@@ -982,7 +984,7 @@ class TVApp:
 
         # ---------- 顶部状态栏 ----------
         ui.rect([0,0,W,top_h], fill="#0A1020")
-        ui.text((12, 12), t("TVLive"), font_size=20, color="#E0E8F0")
+        ui.text((12, 12), f'{t("TVLive")} v{VERSION}', font_size=18, color="#E0E8F0")
         bat_str = f"{self.battery_level}%" + (" █" if self.battery_charging else "")
         bat_color = "#4FC3F7" if self.battery_level >= 60 else "#64F6A6" if self.battery_level >= 20 else "#EF5350"
         ui.text((W-12, 20), bat_str, font_size=18, color=bat_color, anchor="rm")
