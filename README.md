@@ -45,7 +45,7 @@ cd TVLive_for_Anbernic
 ./build.sh
 ```
 
-The binary will be at `build/hud`.
+The binary will be at `build/tvlive`.
 
 ## Usage
 
@@ -72,7 +72,7 @@ Place your M3U/M3U8 files in `/mnt/mmc/TV/`, `/mnt/sdcard/TV/`, or `/roms/TV/`.
 
 ```
 src/                    — C++ source files
-lang/lang.json          — Translation strings
+lang/i18n.json          — Translation strings
 third_party/            — Bundled third-party headers (nlohmann/json)
 CMakeLists.txt          — Build configuration
 build.sh                — One-click build script
